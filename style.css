@@ -1,0 +1,131 @@
+@import url(reset.css);
+body{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+.app{
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-items: stretch;
+    display: inline-flex;
+    padding: 20px ;
+    gap: 2px;
+}
+.main-form, .notesForm, .note{
+    background-color: rgb(14, 161, 230);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius:10px;
+    height: 400px;
+    box-shadow:10px 5px 5px  gray;
+}
+.form_name, .notes_name, .note_text{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    height: 40px; 
+    margin-bottom: 10px;
+
+}
+
+.contentItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   
+    position: relative;
+}
+.contentList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+}
+.input{
+    border-radius: 50px;
+    box-shadow: 4px 3px 5px greenyellow;
+    text-align: center;
+}
+
+button{
+    border-radius: 70px;
+    /* padding: 10px; */
+    width: 60px;
+    margin-left: 10px;
+    align-items: center;
+}
+.inputNote{
+    height: 100%;
+    border-radius:10px;
+    margin: 10px;
+
+}
+.content_item_user {
+    font-weight: 500;
+    font-size: 20px;
+    color: #123006;
+    text-align: center;
+    padding-right: 6px;
+    padding-right: 80px;
+    flex-grow: 1;
+    text-shadow: #818181 2px 1px 5px;
+    justify-content: flex-start;
+    border: 2px solid transparent;
+    background-color: transparent;
+    height: 40px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: auto 100%;
+}
+.content-item-name-active {
+    background-image: url("img/arrow.svg");
+    
+}
+.content_item_user {
+    border: 2px solid rgb(171, 101, 9);
+   
+}
+.delete {
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    position: absolute;
+    background-image: url("img/off2.svg");
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; */
+    border: 2px solid transparent;
+}
+
+.note_name {
+    height: 34px;
+    text-align: center;
+    /* width: auto; */
+}
+.main-form {
+    /*display: none;*/
+}
+.notesForm {
+    display: none;
+}
+.note{
+    /* display: none; */
+}
